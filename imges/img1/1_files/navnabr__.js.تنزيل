@@ -1,0 +1,10 @@
+function scrollFun(){
+    if(document.documentElement.scrollTop > 200){
+        document.getElementById("navbar").classList.add("navT");
+    }else{
+        document.getElementById("navbar").classList.remove("navT")
+    }
+}
+window.onscroll = function(){
+    scrollFun();
+}
